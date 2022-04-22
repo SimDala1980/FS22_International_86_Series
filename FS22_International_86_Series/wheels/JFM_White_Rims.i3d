@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Julian F. Modding - White Rims" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.dds"/>
+    <File fileId="3" filename="$data/shared/wheels/rims/rim001_vmask.dds"/>
+    <File fileId="9" filename="../textures/IH1086_normal2.dds"/>
+    <File fileId="10" filename="../textures/JFM_IH1086_Specular2.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="JulianF_IH_mat2" materialId="5" diffuseColor="0.0156863 0.27451 0.054902 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.5 0.02 0.01 32"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.98 0.98 0.72 32"/>
+      <CustomParameter name="colorMat3" value="0 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="0 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="0 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="rim001_mat" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.98 0.98 0.72 0"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="JFM_White_Rims.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="JulianFM_Rims_back" nodeId="13">
+        <TransformGroup name="JFM_out" nodeId="14">
+          <Shape shapeId="1" name="JFM_White_Rim_out" clipDistance="800" nodeId="15" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="JFM_White_Rim_out" clipDistance="800" nodeId="16" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="JFM_White_Rim_out" clipDistance="800" nodeId="17" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="JFM_in" nodeId="18">
+          <Shape shapeId="2" name="JFM_IH_Felgen_back" nodeId="19" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="JFM_IH_Felgen_back" rotation="0 180 0" nodeId="20" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="JFM_hub" nodeId="21"/>
+        <TransformGroup name="JFM_WheelWeights" nodeId="22"/>
+        <TransformGroup name="JFM_Wide_out" nodeId="23"/>
+        <TransformGroup name="JFM_Dual_in" nodeId="24">
+          <Shape shapeId="3" name="JFM_IH_Felgen_back._dual" nodeId="25" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="JFM_IH_Felgen_back._dual" rotation="0 180 0" nodeId="26" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="JulianFM_Rims_front" nodeId="27">
+        <TransformGroup name="JFM_front" nodeId="28">
+          <Shape shapeId="4" name="JFM_IH_Rim_Front" nodeId="29" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="JFM_IH_Rim_Front" rotation="0 180 0" nodeId="30" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="JFM_front_FWA" nodeId="31">
+          <Shape shapeId="5" name="JFM_FWA_Rim" nodeId="32" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="JFM_FWA_Rim" rotation="0 180 0" nodeId="33" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

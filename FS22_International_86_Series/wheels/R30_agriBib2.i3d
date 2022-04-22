@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="R30_agriBib2" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="1" filename="agriBib2_normal.png" />
+    <File fileId="2" filename="agriBib2_vmask.png" />
+  </Files>
+
+  <Materials>
+    <Material name="agriBib2_mat330" materialId="1" diffuseColor="0.5 0.5 0.5 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+      <CustomParameter name="morphPosition" value="-0.468844 -0.708 0.5 0.1"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="agriBib2_mat333" materialId="2" diffuseColor="0.5 0.5 0.5 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+      <CustomParameter name="morphPosition" value="-0.468727 -0.7085 0.5 0.1"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="agriBib2_mat334" materialId="3" diffuseColor="0.5 0.5 0.5 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+      <CustomParameter name="morphPosition" value="-0.425289 -0.759 0.5 0.1"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="R30_agriBib2.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="agriBib2_380_85R30" nodeId="1">
+      <TransformGroup name="lod" lodDistance="0 25" collision="false" density="0" clipDistance="600" nodeId="2">
+        <Shape name="lod0" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="3"/>
+        <Shape name="lod1" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="4"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="agriBib2_420_85R30" nodeId="5">
+      <TransformGroup name="lod" lodDistance="0 25" collision="false" density="0" clipDistance="600" nodeId="6">
+        <Shape name="lod0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="7"/>
+        <Shape name="lod1" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="8"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="agriBib2_420_90R30" nodeId="9">
+      <TransformGroup name="lod" lodDistance="0 25" collision="false" density="0" clipDistance="600" nodeId="10">
+        <Shape name="lod0" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="11"/>
+        <Shape name="lod1" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="12"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

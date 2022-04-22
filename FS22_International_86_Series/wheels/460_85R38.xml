@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/wheel.xsd">
+    <brand>MICHELIN</brand>
+    <name>AGRIBIB2</name>
+    <default>
+        <physics radius="0.874" width="0.46" mass="0.207" tireType="mud" frictionScale="2.0" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/tires/michelin/agriBib2/R38_agriBib2.i3d" nodeLeft="2|0" nodeRight="2|0" maxDeformation="0.078" sideDeformOffset="0.949" isCareWheel="false" tireTrackAtlasIndex="0" />
+        <outerRim filename="wheels/JFM_White_Rims.i3d" node="0|0|0" widthAndDiam="16 38" />
+        <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="2|0" nodeRight="2|1" widthAndDiam="22 38.5" />
+    </default>
+    <configurations>
+        <configuration id="Michelin_Rowcrop_Single" >
+            <innerRim filename="wheels/JFM_White_Rims.i3d" nodeLeft="0|1|0" nodeRight="0|1|1"  />
+        </configuration>
+        <configuration id="Michelin_Rowcrop_Dual" >            
+        <innerRim filename="wheels/JFM_White_Rims.i3d" nodeLeft="0|5|0" nodeRight="0|5|1"  />
+        </configuration>
+        <configuration id="Michelin_Singles_Weight" >
+               <outerRim filename="wheels/JFM_White_Rims.i3d" node="0|0|0" widthAndDiam="16 42" />
+			   <innerRim filename="wheels/JFM_White_Rims.i3d" nodeLeft="0|1|0" nodeRight="0|1|1"  />           
+               <additional filename="wheels/JFM_White_Rims.i3d" nodeLeft="0|3|0" nodeRight="0|3|1" offset="0.1" scale="2 2 2" mass="0.4" />
+        </configuration>
+    </configurations>
+</wheel>

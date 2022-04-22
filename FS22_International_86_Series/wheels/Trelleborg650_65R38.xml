@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/wheel.xsd">
+    <brand>TRELLEBORG</brand>
+    <name>TM800</name>
+    <default>
+        <physics radius="0.906" width="0.65" mass="0.276" tireType="mud" frictionScale="2.25" maxLongStiffness="10" maxLatStiffness="120" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/tires/trelleborg/TM800/R38_TM800.i3d" nodeLeft="3|0" nodeRight="3|0" maxDeformation="0.085" sideDeformOffset="0.954" isCareWheel="false" tireTrackAtlasIndex="0" />
+        <!-- <outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="1|0" widthAndDiam="20 38" /> -->
+        <!-- <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="20 38" /> -->
+		<outerRim filename="wheels/JFM_White_Rims.i3d" node="0|0|2" widthAndDiam="20 38.2" />
+        <innerRim filename="wheels/JFM_White_Rims.i3d" nodeLeft="1|1|0" nodeRight="1|1|1" widthAndDiam="20 39" />
+    </default>
+    <configurations>
+        <!-- <configuration id="dual" > -->
+            <!-- <innerRim filename="wheels/JFM_White_Rims.i3d" /> -->
+        <!-- </configuration> -->
+		<configuration id="Normal_Single" >
+            <innerRim filename="wheels/JFM_White_Rims.i3d" nodeLeft="1|1|0" nodeRight="1|1|1" widthAndDiam="20 39" />
+        </configuration>
+        <configuration id="weight3" >
+            <additional filename="$data/shared/wheels/weights/weight003.i3d" nodeLeft="0|0" nodeRight="0|1" offset="0.05" scale="0.45 0.83 0.83" mass="0.6" />
+        </configuration>
+    </configurations>
+</wheel>

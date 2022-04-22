@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/vehicle_sounds.xsd">
+    <motorized>
+        <sounds>
+            <motorStart template="CAR_MOTOR_START"  file="sounds/886start.ogg"  				   volumeScale="25.5"/>
+            <motorStop template="CAR_MOTOR_STOP"    file="sounds/886stop.ogg"   				   volumeScale="10.5"/>
+            <motor template="CAR_MOTOR_IDLE"        file="sounds/886idle.ogg"   				   volumeScale="10.5"/>
+            <motor template="CAR_MOTOR_OFFLOAD_RUN" file="sounds/886runOff.ogg"  				   volumeScale="5.5"/>
+            <motor template="CAR_MOTOR_ONLOAD_RUN"  file="sounds/886runOn.ogg" 					   volumeScale="11.0" 	  pitchScale="1.25"/>
+            <gearbox template="transmissionMedium"  file="sounds/transmissionLoop03.wav"           volumeScale="0.1"      pitchScale="0.8"   />
+            <gearLeverStart template="gearDisengaged" file="sounds/886start.ogg" volumeScale="8.0"/>
+            <gearLeverEnd template="gearEngaged" volumeScale="6.8"/>
+			<gearGroupLeverStart template="gearDisengaged" volumeScale="6.8"/>
+            <gearGroupLeverEnd template="gearEngaged" volumeScale="6.8"/>
+        </sounds>
+    </motorized>
+
+    <lights>
+        <sounds>
+            <toggleLights template="SWITCH_01"  />
+            <turnLight template="SWITCH_TURNLIGHT"  />
+        </sounds>
+    </lights>
+
+    <attacherJoints>
+        <sounds>
+            <attach template="ATTACH_01" />
+            <hydraulic template="defaultHydraulicSound" />
+        </sounds>
+    </attacherJoints>
+
+    <drivable>
+        <sounds>
+            <waterSplash template="WATER_SPLASH_01" />
+        </sounds>
+    </drivable>
+
+    <honk>
+        <sound file="sounds/886Honk.ogg" volumeScale="10.2" />
+    </honk>
+</sounds>

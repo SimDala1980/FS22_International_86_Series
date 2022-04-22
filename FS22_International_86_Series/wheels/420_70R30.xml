@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/wheel.xsd">
+    <brand>TRELLEBORG</brand>
+    <name>TM700</name>
+    <default>
+        <physics radius="0.7" width="0.42" mass="0.145" tireType="mud" frictionScale="2.0" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/tires/trelleborg/TM700/R30_TM700.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.064" sideDeformOffset="0.965" isCareWheel="false" tireTrackAtlasIndex="0" />
+        <outerRim filename="wheels/JFM_White_Rims.i3d" node="0|0|2" widthAndDiam="15 30" />
+        <innerRim filename="wheels/JFM_White_Rims.i3d" nodeLeft="1|1|0" nodeRight="1|1|1" widthAndDiam="15 30" />
+    </default>
+    <configurations>
+        <configuration id="dual" >
+            <innerRim filename="-" />
+        </configuration>
+    </configurations>
+</wheel>

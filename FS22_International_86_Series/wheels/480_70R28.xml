@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/wheel.xsd">
+    <brand>TRELLEBORG</brand>
+    <name>TM700</name>
+    <default>
+        <physics radius="0.708" width="0.48" mass="0.159" tireType="mud" frictionScale="2.0" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/tires/trelleborg/TM700/R28_TM700.i3d" nodeLeft="6|0" nodeRight="6|0" maxDeformation="0.07" sideDeformOffset="0.960" isCareWheel="false" tireTrackAtlasIndex="0" />
+        <outerRim filename="wheels/JFM_White_Rims.i3d" node="0|0|2" widthAndDiam="15 28.6" />
+        <innerRim filename="wheels/JFM_White_Rims.i3d" nodeLeft="1|1|0" nodeRight="1|1|1" widthAndDiam="15 29" />
+    </default>
+    <configurations>
+        <configuration id="single" >
+			<outerRim filename="wheels/JFM_White_Rims.i3d" node="0|0|0" widthAndDiam="16 38" />
+            <innerRim filename="wheels/JFM_White_Rims.i3d" nodeLeft="0|1|0" nodeRight="0|1|1"  />
+        </configuration>
+    </configurations>
+</wheel>
