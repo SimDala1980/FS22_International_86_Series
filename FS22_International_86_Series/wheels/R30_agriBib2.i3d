@@ -4,8 +4,8 @@
 
   <Files>
     <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
-    <File fileId="1" filename="agriBib2_normal.png" />
-    <File fileId="2" filename="agriBib2_vmask.png" />
+    <File fileId="1" filename="$data/shared/wheels/tires/michelin/agriBib2/agriBib2_normal.dds" />
+    <File fileId="2" filename="$data/shared/wheels/tires/michelin/agriBib2/agriBib2_vmask.dds" />
   </Files>
 
   <Materials>

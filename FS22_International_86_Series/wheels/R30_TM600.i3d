@@ -4,8 +4,8 @@
 
   <Files>
     <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
-    <File fileId="1" filename="TM600_normal.png" />
-    <File fileId="2" filename="TM600_vmask.png" />
+    <File fileId="1" filename="$data/shared/wheels/tires/trelleborg/TM600/TM600_normal.dds" />
+    <File fileId="2" filename="$data/shared/wheels/tires/trelleborg/TM600/TM600_vmask.dds" />
   </Files>
 
   <Materials>

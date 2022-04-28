@@ -220,29 +220,7 @@
 				<objectChange node="2wd" visibilityActive="false" visibilityInactive="true" />	<!--2wd-->
 				<objectChange node="Kurbelwelle" visibilityActive="true" visibilityInactive="false" />	<!--Driveshaft_PTO-->
             </wheelConfiguration>
-			<!-- <wheelConfiguration name="TM700 480/70R30 - TM800 650/65R38" price="3000" brand="TRELLEBORGFOURWHEELDRIVEE"> -->
-                <!-- <wheels autoRotateBackSpeed="2.2" ackermannSteeringIndex="2"> -->
-                   <!-- <wheel filename="wheels/480_70R30.xml" isLeft="true" hasTireTracks="true" hasParticles="true"> -->
-                        <!-- <physics rotSpeed="1" restLoad="2.9" repr="Lenkung_links1" driveNode="Vorderrad_links_Node1" forcePointRatio="0.43" initialCompression="25" suspTravel="0.1" spring="30" damper="100" yOffset="0.035"/> -->
-                        <!-- <steering node="steeringArmx" nodeMinTransX="0.2" nodeMaxTransX="-0.2"/> -->
-                    <!-- </wheel> -->
-                    <!-- <wheel filename="wheels/480_70R30.xml" isLeft="false" hasTireTracks="true" hasParticles="true"> -->
-                        <!-- <physics rotSpeed="1" restLoad="2.9" repr="Lenkung_rechts1" driveNode="Vorderrad_rechts_Node1" forcePointRatio="0.43" initialCompression="25" suspTravel="0.1" spring="30" damper="100" yOffset="0.035"/> -->
-                    <!-- </wheel> -->
-                    <!-- <wheel filename="wheels/Trelleborg650_65R38.xml" configId="Normal_Single" isLeft="true" hasTireTracks="true" hasParticles="true"> -->
-                        <!-- <physics rotSpeed="1" restLoad="1.0" repr="wheelBackLeft1" forcePointRatio="0.3" initialCompression="50" suspTravel="0.1" spring="30" damper="100"/> -->
-                    <!-- </wheel> -->
-                    <!-- <wheel filename="wheels/Trelleborg650_65R38.xml" configId="Normal_Single" isLeft="false" hasTireTracks="true" hasParticles="true"> -->
-                        <!-- <physics rotSpeed="1" restLoad="1.0" repr="wheelBackRight1" forcePointRatio="0.3" initialCompression="50" suspTravel="0.1" spring="30" damper="100"/> -->
-                    <!-- </wheel> -->
-                <!-- </wheels> -->
-				<!-- <objectChange node="FWA" visibilityActive="true" visibilityInactive="false" />	<!--Front Wheel Assist--> -->
-				<!-- <objectChange node="JFM_IH_4wd_static" visibilityActive="true" visibilityInactive="false" />	<!--FWA Addition--> -->
-				<!-- <objectChange node="2wd" visibilityActive="false" visibilityInactive="true" />	<!--2wd--> -->
-				<!-- <objectChange node="Kurbelwelle" visibilityActive="true" visibilityInactive="false" />	<!--Driveshaft_PTO--> -->
-            <!-- </wheelConfiguration> -->
 			<wheelConfiguration name="TM700 480/70R28 - TM800 650/65R38" price="500" brand="TRELLEBORGFOURWHEELDRIVEE">
-			<!-- --- Simdala, denna MÅSTE med -->
                 <wheels autoRotateBackSpeed="2.2" ackermannSteeringIndex="2">
                    <wheel filename="wheels/480_70R28.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
                         <physics rotSpeed="1" restLoad="2.9" repr="Lenkung_links1" driveNode="Vorderrad_links_Node1" forcePointRatio="0.43" initialCompression="25" suspTravel="0.1" spring="30" damper="100" yOffset="0.035"/>
@@ -501,7 +479,7 @@
 
         <motorConfigurations>
             <motorConfiguration name="886" hp="95" price="0">
-                <motor torqueScale="0.401" minRpm="850" maxRpm="2200" maxForwardSpeed="35" maxBackwardSpeed="25" brakeForce="4.5" lowBrakeForceScale="0.22">
+                <motor torqueScale="0.401" minRpm="750" maxRpm="2200" maxForwardSpeed="40" maxBackwardSpeed="25" brakeForce="4.5" lowBrakeForceScale="0.22">
                     <torque normRpm="0.45" torque="0.9"/>
                     <torque normRpm="0.5" torque="0.97"/>
                     <torque normRpm="0.59" torque="1"/>
@@ -509,7 +487,7 @@
                     <torque normRpm="0.86" torque="0.88"/>
                     <torque normRpm="1" torque="0.72"/>
                 </motor>
-                <transmission autoGearChangeTime="0.6" gearChangeTime="0.6" name="$l10n_configuration_TRANSM">
+                <transmission autoGearChangeTime="0.45" gearChangeTime="0.45" name="$l10n_configuration_TRANSM">
                     <directionChange useGear="false" useGroup="true" changeTime="0.7"/>
                     <groups type="DEFAULT" changeTime="0.7">
                         <group ratio="-0.4834" name="R" />
@@ -526,8 +504,9 @@
                     <forwardGear maxSpeed="24.0" name="4"/>
 					<forwardGear maxSpeed="28.0" name="5"/>
                     <forwardGear maxSpeed="32.0" name="6"/>
-					<forwardGear maxSpeed="35.0" name="7"/>
-					<forwardGear maxSpeed="45.0" name="8"/>					
+					<forwardGear maxSpeed="34.0" name="7"/>
+					<forwardGear maxSpeed="38.0" name="8"/>
+					<forwardGear maxSpeed="60.0" name="9"/>											
 					
 					<backwardGear maxspeed="4.0" name="R1"/>
 					<backwardGear maxspeed="7.0" name="R2"/>
@@ -667,7 +646,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits>
-                    <fillUnit unit="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="140" >
+                    <fillUnit unit="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="250" >
                         <dashboard displayType="ANIMATION" valueType="fillLevel" animName="fuelNeedleAnim" groups="MOTOR_ACTIVE"/>
                     </fillUnit>
                     <fillUnit unit="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="air" capacity="4000" >
@@ -745,17 +724,6 @@
 			</attacherJoint>
 		</design4Configuration>
 	</design4Configurations>
-	
-	<design3Configurations title="$l10n_configuration_MUDGUARD">
-		<design3Configuration name="$l10n_configuration_COVERED" price="1500" >
-			<objectChange node="MudguardL" visibilityActive="true" />
-			<objectChange node="MudguardR" visibilityActive="true" />
-		</design3Configuration>
-		<design3Configuration name="$l10n_configuration_OPEN" price="0" >
-			<objectChange node="MudguardL" visibilityActive="false" />
-			<objectChange node="MudguardR" visibilityActive="false" />
-		</design3Configuration>
-	</design3Configurations>
 	
     <dashboard>
         <groups>
@@ -1109,7 +1077,5 @@
 		<i3dMapping id="DashboardLight4" node="0>2|9" />
 		<i3dMapping id="DashboardLight5" node="0>2|10" />
 		<i3dMapping id="DashboardLight6" node="0>2|11" />
-		<i3dMapping id="MudguardR" node="1>2|2|0|1" />
-		<i3dMapping id="MudguardL" node="1>2|1|0|1" />
 	</i3dMappings>
 </vehicle>

@@ -621,13 +621,13 @@
             <Shape shapeId="38" name="innerPartStatic28" translation="0 0.0132983 3.52252e-05" clipDistance="75" nodeId="238" materialIds="34" castsShadows="true" receiveShadows="true" decalLayer="1"/>
           </Shape>
           <Shape shapeId="41" name="workingLight02" translation="-0.555425 1.17091 -0.392092" rotation="90 -1.86693e-05 2.23118e-05" clipDistance="300" nodeId="239" materialIds="38" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="42" name="rotArm" translation="-0.000573952 0.0200176 0.00386139" rotation="-90 2.26872 24.7948" clipDistance="300" nodeId="240" materialIds="38" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="42" name="rotArm" translation="-0.000573952 0.0200176 0.00386139" rotation="-90.9235 2.0724 0.775433" clipDistance="300" nodeId="240" materialIds="38" castsShadows="true" receiveShadows="true">
               <Shape shapeId="43" name="glassStatic" translation="1.65775e-07 -0.021022 -1.90735e-06" clipDistance="75" nodeId="241" materialIds="11" castsShadows="true" receiveShadows="true" decalLayer="1"/>
               <Shape shapeId="44" name="innerPartStatic14" translation="-0.000130784 0.0566864 0.0227625" clipDistance="75" nodeId="242" materialIds="38" castsShadows="true" receiveShadows="true" decalLayer="1"/>
             </Shape>
           </Shape>
           <Shape shapeId="41" name="workingLight02" translation="0.622397 1.17091 -0.392092" rotation="90 -1.86693e-05 2.23118e-05" clipDistance="300" nodeId="243" materialIds="38" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="42" name="rotArm" translation="-0.000573952 0.0200176 0.00386139" rotation="-90 11.7801 -1.56801" clipDistance="300" nodeId="244" materialIds="38" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="42" name="rotArm" translation="-0.000573952 0.0200176 0.00386139" rotation="-90 4.42516 -1.56801" clipDistance="300" nodeId="244" materialIds="38" castsShadows="true" receiveShadows="true">
               <Shape shapeId="43" name="glassStatic" translation="1.65775e-07 -0.021022 -1.90735e-06" clipDistance="75" nodeId="245" materialIds="11" castsShadows="true" receiveShadows="true" decalLayer="1"/>
               <Shape shapeId="44" name="innerPartStatic14" translation="-0.000130784 0.0566864 0.0227625" clipDistance="75" nodeId="246" materialIds="38" castsShadows="true" receiveShadows="true" decalLayer="1"/>
             </Shape>
@@ -722,7 +722,7 @@
           <TransformGroup name="transform" nodeId="315"/>
           <TransformGroup name="numbersSpeed02" translation="0.178618 2.03523 -0.568183" rotation="176.561 -0 180" nodeId="316"/>
         </TransformGroup>
-        <TransformGroup name="Motor_Configuration" visibility="false" nodeId="317">
+        <TransformGroup name="Motor_Configuration" nodeId="317">
           <Shape shapeId="61" name="JFM_International_1086_decals_886" nodeId="318" materialIds="12" castsShadows="true" receiveShadows="true"/>
           <Shape shapeId="62" name="JFM_International_1086_decals_986" nodeId="319" materialIds="12" castsShadows="true" receiveShadows="true"/>
           <Shape shapeId="63" name="JFM_International_1086_decals_1086" nodeId="320" materialIds="12" castsShadows="true" receiveShadows="true"/>
@@ -779,7 +779,7 @@
         <TransformGroup name="Isobus_Configuration" nodeId="356"/>
         <TransformGroup name="Cameras" nodeId="357">
           <TransformGroup name="outdoorCameraTarget" translation="1.91304e-16 1.56211 0.058681" rotation="-24 180 0" nodeId="358">
-            <Camera name="outdoorCamera1" translation="0 0 10.35" rotation="-0.457684 -0.418738 -0.186438" nodeId="359" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+            <Camera name="outdoorCamera1" translation="0 0 10.35" rotation="-0.458191 0.209369 0.0932173" nodeId="359" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
           </TransformGroup>
           <TransformGroup name="cameraRaycastNode1" translation="0 1.79774 1.88611" nodeId="360"/>
           <TransformGroup name="cameraRaycastNode2" translation="0 3.08109 -1.38164" nodeId="361"/>
@@ -885,7 +885,7 @@
           </TransformGroup>
         </TransformGroup>
       </Shape>
-      <Camera name="camera" translation="1.87204 2.48405 2.84877" rotation="-26.3593 32.1545 7.08282e-06" nodeId="433" fov="60" nearClip="0.1" farClip="10000" orthographicHeight="1"/>
+      <Camera name="camera" translation="-1.43339 2.00225 -0.0519488" rotation="142.411 -85.1798 -180" nodeId="433" fov="60" nearClip="0.1" farClip="10000" orthographicHeight="1"/>
   </Scene>
 
 </i3D>
